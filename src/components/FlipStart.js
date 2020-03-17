@@ -129,7 +129,7 @@ function FlipStart() {
 		if (active === 0) {
 			console.log(active);
 			e.target.className = 'indentAnim';
-			setActive(1); //huj
+			setActive(1);
 		} else {
 			console.log('elo');
 			document.getElementsByClassName('indentAnim').className = 'indent';
