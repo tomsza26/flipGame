@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+$font1: 'Lato', sans-serif;
+
+$color1: #141a46;
+$color2: #ff641c;
+$color3: #f7f4eb;
+
+* {
+	font-family: $font1;
+}
+
+body {
+	background: #cfc4f5;
+}
+
+.App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+#flipCenter {
+	width: 400px;
+	height: 400px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: absolute;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.25s linear;
+
+	.letter {
+		font-size: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		text-align: center;
+		background: $color2;
+		color: $color3;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: pointer;
+		transition: 0.6s;
+		width: 99%;
+		height: 99%;
+		position: relative;
+
+		.back {
+			position: absolute;
+			backface-visibility: hidden;
+			display: block;
+			transform: rotateY(180deg);
+			box-sizing: border-box;
+			font-size: 20px;
+			width: 100%;
+			height: 100%;
+
+			.level {
+				font-size: 25px;
+				font-weight: 700;
+				display: block;
+				transition: 0.5s;
+				margin: 0;
+				height: 33.3333%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-self: center;
+			}
+
+			.level:hover {
+				background: #5866d0;
+				color: #cfc4f5;
+			}
+		}
+	}
+
+	.letter:hover {
+		opacity: 0.8;
+	}
+
+	#l {
+		background: $color1;
+		-moz-transform: scale(-1, 1);
+		-webkit-transform: scale(-1, 1);
+		-o-transform: scale(-1, 1);
+		-ms-transform: scale(-1, 1);
+		transform: scale(-1, 1);
+		cursor: default;
+	}
+
+	#l:hover {
+		opacity: 1;
+	}
+
+	#fAnim,
+	#iAnim,
+	#pAnimation {
+		transform: rotateY(-180deg);
+		background: $color1;
+		width: calc(200% - 2px);
+		z-index: 2;
+		transform-style: preserve-3d;
+		transition: all 0.4s linear;
+
+		.front {
+			opacity: 0;
+			background: $color2;
+		}
+	}
+
+	#pAnimation {
+		width: 99%;
+		z-index: 1;
+	}
+
+	#lAnim,
+	#pAnim {
+		opacity: 0;
+		transition: 0.4s;
+		background: $color2;
+	}
+
+	#pAnim {
+		-moz-transform: scale(-1, 1);
+		-webkit-transform: scale(-1, 1);
+		-o-transform: scale(-1, 1);
+		-ms-transform: scale(-1, 1);
+		transform: scale(-1, 1);
+		background: $color1;
+	}
+
+	#fAnim:hover,
+	#iAnim:hover,
+	#pAnimation:hover {
+		opacity: 1;
+	}
+}
+
+#game {
+	display: none;
+}
+
+#gameActive {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	box-sizing: border-box;
+	animation: fadein 0.3s;
+	z-index: 999;
+	grid-gap: 4px;
+
+	.indent {
+		background: $color2;
+		cursor: pointer;
+		padding: 5px;
+		position: relative;
+		box-sizing: border-box;
+
+		.backCard {
+			position: absolute;
+			backface-visibility: hidden;
+			display: block;
+			transform: rotateY(180deg);
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+	}
+
+	.indentAnim {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotateY(-180deg);
+		background: $color1;
+		z-index: 2;
+		transform-style: preserve-3d;
+		transition: all 0.4s linear;
+		cursor: pointer;
+
+		.frontCard {
+			opacity: 0;
+			background: $color2;
+		}
+
+		.backCard {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px;
+
+			svg {
+				transform: rotateY(-180deg);
+				width: 7em;
+				height: 7em;
+				color: $color3;
+			}
+		}
+	}
+}
+
+#flipCenter.hide-opacity {
+	opacity: 0;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
