@@ -10,16 +10,40 @@ $color3: #f7f4eb;
 }
 
 body {
-	background: #cfc4f5;
+	background: #cfc4f5 !important;
+	height: 100vh;
 }
 
 .App {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: calc(100vh - 5px);
 	flex-wrap: wrap;
+	background: #cfc4f5;
+
+	#paused {
+		display: none;
+		position: absolute;
+		background: rgba(51, 51, 51, 0.78);
+		height: calc(100vh + 5px);
+		z-index: 999;
+		text-align: center;
+		width: 100%;
+		font-weight: 900;
+		font-size: 10vw;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#paused::before {
+		content: 'PAUSED';
+		width: 100%;
+		display: block;
+		background: #ff00c8;
+		color: #cfc4f5;
+	}
 }
 
 #flipCenter {
@@ -79,6 +103,22 @@ body {
 			.level:hover {
 				background: #5866d0;
 				color: #cfc4f5;
+			}
+		}
+
+		#iback {
+			padding: 6px;
+
+			.ibacked {
+				text-align: left;
+				font-size: 14px;
+				margin: 5px;
+				font-weight: 500;
+			}
+
+			#pIns {
+				font-size: 18px;
+				font-weight: 700;
 			}
 		}
 	}
@@ -150,62 +190,79 @@ body {
 }
 
 #gameActive {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 1fr);
 	width: 100%;
 	height: 100%;
-	padding: 2px;
-	box-sizing: border-box;
-	animation: fadein 0.3s;
-	z-index: 999;
-	grid-gap: 4px;
 
-	.indent {
-		background: $color2;
-		cursor: pointer;
-		padding: 5px;
-		position: relative;
-		box-sizing: border-box;
+	.progress {
+		border-radius: 0;
+		background: #cfc4f5;
+		height: 5px;
 
-		.backCard {
-			position: absolute;
-			backface-visibility: hidden;
-			display: block;
-			transform: rotateY(180deg);
-			box-sizing: border-box;
-			font-size: 20px;
+		.progress-bar {
+			background: #ff00c8;
+			transition: width 0.5s linear;
 		}
 	}
 
-	.indentAnim {
+	.gameInside {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		width: 100%;
+		height: 100%;
 		box-sizing: border-box;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transform: rotateY(-180deg);
-		background: $color1;
-		z-index: 2;
-		transform-style: preserve-3d;
-		transition: all 0.4s linear;
-		cursor: pointer;
+		animation: fadein 0.3s;
+		z-index: 998;
+		grid-gap: 4px;
+		grid-auto-rows: minmax(50px, auto);
 
-		.frontCard {
-			opacity: 0;
+		.indent {
 			background: $color2;
+			cursor: pointer;
+			padding: 5px;
+			position: relative;
+			box-sizing: border-box;
+			transition: all 0.25s linear;
+
+			.backCard {
+				position: absolute;
+				backface-visibility: hidden;
+				display: block;
+				transform: rotateY(180deg);
+				box-sizing: border-box;
+				font-size: 20px;
+			}
 		}
 
-		.backCard {
+		.indentAnim {
+			box-sizing: border-box;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 5px;
+			transform: rotateY(-180deg);
+			background: $color1;
+			z-index: 2;
+			transform-style: preserve-3d;
+			transition: all 0.25s linear;
+			cursor: pointer;
 
-			svg {
-				transform: rotateY(-180deg);
-				width: 7em;
-				height: 7em;
-				color: $color3;
+			.frontCard {
+				opacity: 0;
+				background: $color2;
+			}
+
+			.backCard {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 5px;
+
+				svg {
+					transform: rotateY(-180deg);
+					width: 30%;
+					height: 30%;
+					color: $color3;
+				}
 			}
 		}
 	}
