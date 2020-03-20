@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/flip/static/css/main.3ad33d6b.chunk.css",
-    "main.js": "/flip/static/js/main.4441163f.chunk.js",
-    "main.js.map": "/flip/static/js/main.4441163f.chunk.js.map",
-    "runtime-main.js": "/flip/static/js/runtime-main.fd9a9f9b.js",
-    "runtime-main.js.map": "/flip/static/js/runtime-main.fd9a9f9b.js.map",
-    "static/css/2.de424728.chunk.css": "/flip/static/css/2.de424728.chunk.css",
-    "static/js/2.41bc2fc6.chunk.js": "/flip/static/js/2.41bc2fc6.chunk.js",
-    "static/js/2.41bc2fc6.chunk.js.map": "/flip/static/js/2.41bc2fc6.chunk.js.map",
-    "index.html": "/flip/index.html",
-    "precache-manifest.aa1ecdc7bab4e60f45fdfa0a6208cbad.js": "/flip/precache-manifest.aa1ecdc7bab4e60f45fdfa0a6208cbad.js",
-    "service-worker.js": "/flip/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/flip/static/css/2.de424728.chunk.css.map",
-    "static/css/main.3ad33d6b.chunk.css.map": "/flip/static/css/main.3ad33d6b.chunk.css.map",
-    "static/js/2.41bc2fc6.chunk.js.LICENSE.txt": "/flip/static/js/2.41bc2fc6.chunk.js.LICENSE.txt"
+    "main.css": "/flipGame/static/css/main.3ad33d6b.chunk.css",
+    "main.js": "/flipGame/static/js/main.74c278c8.chunk.js",
+    "main.js.map": "/flipGame/static/js/main.74c278c8.chunk.js.map",
+    "runtime-main.js": "/flipGame/static/js/runtime-main.c053609b.js",
+    "runtime-main.js.map": "/flipGame/static/js/runtime-main.c053609b.js.map",
+    "static/css/2.de424728.chunk.css": "/flipGame/static/css/2.de424728.chunk.css",
+    "static/js/2.41bc2fc6.chunk.js": "/flipGame/static/js/2.41bc2fc6.chunk.js",
+    "static/js/2.41bc2fc6.chunk.js.map": "/flipGame/static/js/2.41bc2fc6.chunk.js.map",
+    "index.html": "/flipGame/index.html",
+    "precache-manifest.bc1d607b136a863c2bafd27cb95567a6.js": "/flipGame/precache-manifest.bc1d607b136a863c2bafd27cb95567a6.js",
+    "service-worker.js": "/flipGame/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/flipGame/static/css/2.de424728.chunk.css.map",
+    "static/css/main.3ad33d6b.chunk.css.map": "/flipGame/static/css/main.3ad33d6b.chunk.css.map",
+    "static/js/2.41bc2fc6.chunk.js.LICENSE.txt": "/flipGame/static/js/2.41bc2fc6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd9a9f9b.js",
+    "static/js/runtime-main.c053609b.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.41bc2fc6.chunk.js",
     "static/css/main.3ad33d6b.chunk.css",
-    "static/js/main.4441163f.chunk.js"
+    "static/js/main.74c278c8.chunk.js"
   ]
 }
