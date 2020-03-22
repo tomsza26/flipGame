@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2a04da305106b8315ab4bfa5338b6097",
+    "revision": "a61014d4b53cb7eb0777c907a901d5f5",
     "url": "/flipGame/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flipGame/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "1a57912b27611383df1b",
+    "revision": "e8811ed20edd8b0f17c2",
     "url": "/flipGame/static/css/main.3ad33d6b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flipGame/static/js/2.41bc2fc6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a57912b27611383df1b",
-    "url": "/flipGame/static/js/main.74c278c8.chunk.js"
+    "revision": "e8811ed20edd8b0f17c2",
+    "url": "/flipGame/static/js/main.b218a04e.chunk.js"
   },
   {
     "revision": "8844b20733d0e07e3acb",

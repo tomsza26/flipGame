@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flipGame/precache-manifest.bc1d607b136a863c2bafd27cb95567a6.js"
+  "/flipGame/precache-manifest.4ae06409667ae6389ef05b8e51b7a8fd.js"
 );
 
 self.addEventListener('message', (event) => {

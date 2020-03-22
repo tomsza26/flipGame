@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/flipGame/static/css/main.3ad33d6b.chunk.css",
-    "main.js": "/flipGame/static/js/main.74c278c8.chunk.js",
-    "main.js.map": "/flipGame/static/js/main.74c278c8.chunk.js.map",
+    "main.js": "/flipGame/static/js/main.b218a04e.chunk.js",
+    "main.js.map": "/flipGame/static/js/main.b218a04e.chunk.js.map",
     "runtime-main.js": "/flipGame/static/js/runtime-main.c053609b.js",
     "runtime-main.js.map": "/flipGame/static/js/runtime-main.c053609b.js.map",
     "static/css/2.de424728.chunk.css": "/flipGame/static/css/2.de424728.chunk.css",
     "static/js/2.41bc2fc6.chunk.js": "/flipGame/static/js/2.41bc2fc6.chunk.js",
     "static/js/2.41bc2fc6.chunk.js.map": "/flipGame/static/js/2.41bc2fc6.chunk.js.map",
     "index.html": "/flipGame/index.html",
-    "precache-manifest.bc1d607b136a863c2bafd27cb95567a6.js": "/flipGame/precache-manifest.bc1d607b136a863c2bafd27cb95567a6.js",
+    "precache-manifest.4ae06409667ae6389ef05b8e51b7a8fd.js": "/flipGame/precache-manifest.4ae06409667ae6389ef05b8e51b7a8fd.js",
     "service-worker.js": "/flipGame/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/flipGame/static/css/2.de424728.chunk.css.map",
     "static/css/main.3ad33d6b.chunk.css.map": "/flipGame/static/css/main.3ad33d6b.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.41bc2fc6.chunk.js",
     "static/css/main.3ad33d6b.chunk.css",
-    "static/js/main.74c278c8.chunk.js"
+    "static/js/main.b218a04e.chunk.js"
   ]
 }
